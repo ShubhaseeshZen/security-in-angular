@@ -1,0 +1,17 @@
+<p>Dangerous script</p>
+<p class="e2e-inner-html-interpolated">{{ dangerous_script }}</p>
+<hr />
+<p>Angular security in working on dangerous script</p>
+<p class="e2e-inner-html-bound" [innerHTML]="dangerous_script"></p>
+<hr />
+<p>safe script</p>
+<p class="e2e-inner-html-interpolated" [innerHTML]="safe_script"></p>
+<hr />
+<p>dangerous url link</p>
+<p><a href="attack-url">click me to be attacked</a></p>
+<hr />
+
+<p>safe url</p>
+<p><a href="safe-url">Click Me</a></p>
+
+<hr />
